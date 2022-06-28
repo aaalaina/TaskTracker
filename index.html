@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Tracking Project</title>
+</head>
+<body>
+    <div class="app">
+        <h2>Task App</h2>
+        <div id="addnew" data-bs-toggle="modal" data-bs-target="#form">
+            <span>Add a task!</span>
+            <i class="fa-thin fa-alarm-plus"></i>
+        </div>
+        <h3 class="text-center my-3">Tasks</h3>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary">
+    Launch demo modal
+  </button>
+   -->
+  <!-- Modal -->
+  <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">What do you want to do?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Task Title</p>
+          <input class="form-control" type="text" name="" id="textinput">
+          <div id="msg"></div>
+          <br>
+            <p>Do By</p>
+          <input class="form-control" type="date" name="" id="dateinput">
+          <br>
+          <p>Details</p>
+          <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="addme" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </form>
+        
+        <div id="active-tasks">
+            <!-- <div>
+               <span class="fw-bold">1st task</span>
+               <span class="small text-secondary">2022-6-26</span>
+               <p>read a book</p>
+               <span class="options">
+                <button onClick="updated(this)" data-bs-toggle="modal" data-bs-target="#form" class="edit">edit</button>
+                <button onClick="deletepls(this)" class="delete">delete</button>
+               </span>
+            </div>
+            <div> 
+                <span class="fw-bold">2nd task</span>
+                <span class="small text-secondary">2022-3-18</span>
+                <p>watch a movie</p>
+                <span class="options">
+                 <button onClick="updated(this)" data-bs-toggle="modal" data-bs-target="#form" class="edit">edit</button>
+                 <button onClick="deletepls(this)" class="delete">delete</button>
+                </span>
+            </div> -->
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" 
+integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>

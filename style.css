@@ -1,0 +1,63 @@
+.app{
+    width: 50%;
+    height: 70%;
+    border-radius: 25px;
+    color: #6c3400;
+    border: solid #C87505 5px;
+    padding: 50px;
+    background-color: #f7e5bf;
+    overflow-y: scroll;
+    text-align: center;
+}
+.app h2{
+    text-align: left;
+}
+.app::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #aba300;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addnew{
+    background-color: #dfc27d;
+    padding: 5px 10px;
+    border-radius: 15px;;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: space-between; */
+}
+#addnew:hover{
+    cursor: pointer;
+}
+
+#active-tasks{
+    display: grid;
+    gap: 15px;
+}
+#active-tasks div{
+    border: solid #C87505 3px;
+    background-color: #dfc27d;
+    padding: 5px 10px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#msg{
+    color: #E63400;
+}
+
+button{
+    text-decoration: none;
+    border-radius: 15px;
+    color: #6c3400;
+    border:#C87505 solid 3px;
+    background-color: #f7e5bf;
+    cursor: pointer;
+   text-align: center;
+}
